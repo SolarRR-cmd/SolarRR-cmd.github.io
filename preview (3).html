@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SolarRR - Rooms</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* Header */
+.topbar{
+    background:#b71c1c;
+    color:white;
+    height:55px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 25px;
+}
+
+.logo{
+    font-size:24px;
+    font-weight:bold;
+}
+
+.top-links{
+    display:flex;
+    gap:15px;
+    align-items:center;
+}
+
+.login-btn{
+    background:white;
+    color:#b71c1c;
+    border:none;
+    padding:8px 18px;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+/* Navigation */
+.navbar{
+    background:#111;
+    padding:12px;
+    text-align:center;
+}
+
+.navbar a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+}
+
+.navbar a:hover{
+    color:#ff6b6b;
+}
+
+/* Banner */
+.banner{
+    background:#e53935;
+    color:white;
+    text-align:center;
+    padding:10px;
+    font-size:14px;
+}
+
+/* Main Content */
+.container{
+    max-width:1000px;
+    margin:40px auto;
+    padding:0 20px;
+}
+
+.section-title{
+    margin-bottom:20px;
+    color:#222;
+}
+
+/* ROOM CARD */
+.room-card{
+    background:white;
+    border:1px solid #ffcdd2;
+    border-radius:10px;
+    padding:30px;
+    margin-bottom:50px;
+}
+
+.room-card h2{
+    color:#b71c1c;
+    margin-bottom:10px;
+}
+
+.room-card p{
+    color:#555;
+}
+
+/* Feed */
+.feed-card{
+    background:white;
+    border-radius:10px;
+    padding:25px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom:20px;
+}
+
+.feed-card h3{
+    color:#b71c1c;
+    margin-bottom:10px;
+}
+
+.feed-card p{
+    color:#555;
+}
+
+/* Updates */
+.update{
+    padding:12px 0;
+    border-bottom:1px solid #eee;
+}
+
+.update:last-child{
+    border-bottom:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+    <div class="logo">SolarRR</div>
+
+    <div class="top-links">
+        <span>Sign Up</span>
+        <button class="login-btn">Log In</button>
+    </div>
+</div>
+
+<div class="navbar">
+    <a href="index.html">Home</a>
+    <a href="rooms.html">Rooms</a>
+    <a href="#">Downloads</a>
+    <a href="#">Settings</a>
+</div>
+
+<div class="banner">
+    SolarRR Rooms System is currently in development.
+</div>
+
+<div class="container">
+
+    <h1 class="section-title">Available Room</h1>
+
+    <div class="room-card">
+        <h2>Dorm Room</h2>
+        <p>
+            A private hangout space for chatting, relaxing, and hanging out with others in SolarRR.
+        </p>
+    </div>
+
+    <h1 class="section-title">Room Activity</h1>
+
+    <div class="feed-card">
+        <h3>Status</h3>
+        <p>Dorm Room is online.</p>
+    </div>
+
+    <div class="feed-card">
+        <div class="update">Room system initialized</div>
+        <div class="update">Dorm Room created</div>
+        <div class="update">System running normally</div>
+    </div>
+
+</div>
+
+</body>
+</html>
